@@ -1,4 +1,4 @@
-https://Lymora.github.io/GrowLab_Web/
+https://Lymora.github.io/GrowLab_Web/test.html
 
 
 
