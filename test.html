@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>じぶん資産づくり はじめの一歩</title>
     <meta name="description" content="お金のこと、やさしく、いまから。">
-    <meta name="author" content="ファイナンシャルプランナー（AFP）〇〇〇〇〇">
+    <meta name="author" content="ファイナンシャル・プランナー（AFP）〇〇〇〇〇">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      * {margin: 0px; padding: 0px;box-sizing: border-box; }
+      *, *::before,*::after {margin: 0px; padding: 0px;box-sizing: border-box; }
          #wrap {max-width: 1000px; margin: 0px auto;padding:  0 12px;}
 
       header {border: 3px solid #d8e9dd; }
@@ -22,19 +22,18 @@
         text-align: center;
         color: #2F6B4F;
         text-shadow: 0 1px 2px rgba(0,0,0,.25);
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
-        overflow-wrap: anywhere ; }
+        overflow-wrap: normal ; }
         
       header p.lead{
-        margin: 8px 0 0;
+        margin: 8px auto;
         line-height: 1.6;
         font-size: clamp(14px, 4.8vw, 24px);
         color: #2C3E50;
         text-align: center;
         text-shadow: 1px 1px 1px whitesmoke;
         max-width: 90%;
-        margin: 0 auto;
         overflow-wrap: anywhere; }
 
       @media (max-width: 800px) {
@@ -57,7 +56,7 @@
 
       nav ul li a {
         display: block;
-        background-color: #9bcda2;
+        background-color: #2F6B4F;
         line-height: 50px;
         color: white;
         text-decoration: none;
@@ -79,9 +78,9 @@
       nav ul li a::after{
         content:"";
         position:absolute;
-        left:10%; right:10%; bottom:8px; /* 好みで調整 */
+        left:10%; right:10%; bottom:8px;
         height:2px;
-        background:#2F6B4F;              /* 見出しと合わせた深緑 */
+        background:#ffffff;
         transform: scaleX(0);
         transform-origin: left;
         transition: transform .2s ease; }
@@ -150,6 +149,13 @@
 
       tbody { background: white; }
 
+      .table-wrap{
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; }
+
+      .table-wrap table{
+        min-width: 640px; }
+
       .img-center {
         display: block;
         max-width: 100%;
@@ -204,12 +210,15 @@
 
           <section class="section-small">
             <h3>資産形成の基本姿勢</h3>
-            <p>まずは「総資産のバランス」を考えることが大切です。
-                数か月〜1年分の生活費にあたる緊急資金は確保しつつ、
-                長期で育てたい資金は投資へ振り向けるなど、目的と時期に応じて配分を決めましょう。</p>
-            <p>投資には短期・中期・長期があり、それぞれに向いた商品があります。
-                年齢や家族構成、健康状態、仕事などの変化に合わせて、
-                運用ポリシーを定期的に見直すことも大切です。</p>
+            <p>まず、出発点は総資産のバランスです。
+               生活費の数か月〜1年分にあたる緊急資金を確保したうえで、
+               長期で育てたい資金は投資へ振り向けるなど、
+               目的と時期に応じて配分を設計しましょう。</p>
+            <p>投資には短期・中期・長期があり、
+               それぞれに向いた商品があります。
+               年齢や家族構成、健康状態、仕事の変化に合わせて、
+               資産配分と運用方針は定期的に見直しましょう。
+               暮らしが変われば最適なバランスも変わります。</p>
             <table aria-label="基本姿勢表">
               <thead>
                 <tr><th>期間</th><th>短期</th><th>中期</th><th>長期</th></tr>
@@ -255,75 +264,91 @@
 
           <section class="section-small">
             <h3>NISA の特徴</h3>
-            <p>NISAは、子どもから高齢者まで幅広く利用できる制度です。</p>
+            <p>NISAは、18歳以上の国内居住者が利用できる制度です。</p>
             <p>対象は<strong>投資信託と株式</strong>で、いずれも市場の価格変動の影響を受けます。</p>
-            <p>運用中に得られる利益は非課税で、必要なときに売却して現金化できる<strong>自由度</strong>も魅力。
-              教育費や住宅費など将来の出費に備えるのにも活用できます。</p>
+            <p><strong>運用益は非課税</strong>で、必要なときに売却して現金化できる点も魅力です。
+               教育費や住宅費など将来の出費に備える手段として有効です。
+               ただし、NISA口座で生じた損失は、
+               課税口座（特定口座・一般口座）の利益と<strong>損益通算できず、
+               損失の繰越控除もできません。</strong></p>
+            <p>また、金融機関（証券会社・銀行）によって、取扱商品や売買手数料が異なります。</p>
+            <p><span style="font-size:90%;color:#666">
+               ※18歳未満は対象外です。旧ジュニアNISAは新規加入できません。</span></p>
           </section>
 
           <section class="section-small">
             <h3>iDeCo の特徴</h3>
-            <p>iDeCoは<strong>老後資金づくりに特化</strong>した制度です。</p>
-            <p>対象は<strong>投資信託や保険</strong>で、元本保証型の商品も選べます。
-              掛金は<strong>全額が所得控除</strong>の対象で、積み立て時に大きな節税効果があります。</p>
-            <p>一方で<strong>原則60歳まで引き出せない</strong>、<strong>口座管理などの手数料</strong>がかかる、
-              <strong>受け取り時に課税される場合がある</strong>などの制約もあります。
-              また、会社員・自営業・公務員などの<strong>属性によって掛金の上限額が異なる</strong>ため、自分の立場に合わせた使い方を検討しましょう。</p>
-          </section>
+            <p>iDeCoは、<strong>老後資金づくりに特化</strong>した
+               私的年金（<strong>個人型確定拠出年金</strong>）です。
+               投資信託に加え、定期預金や保険などの元本確保型も選べます。</p>
+            <p>最大のメリットは<strong>税制優遇</strong>で、
+               掛金は全額が所得控除、運用益は非課税です。
+               受け取りは、一時金なら退職所得控除、年金受取なら公的年金等控除の対象です
+               （控除適用後に課税される場合あり）。</p>
+            <p>一方で、原則60歳まで引き出せない、口座管理手数料がかかる、
+               受け取り方法で税負担が変わるといった制約があります。
+               また、<strong>職業や企業年金の有無で掛金の上限が異なり</strong>ます。
+               つまり、転職・失業・結婚などで年金区分や企業年金の有無が変わると、
+               <strong>加入可否や掛金の上限が変動</strong>することがあります。
+               拠出できない期間は、運用だけを継続することになりますが、
+               その間も手数料は発生します。</p>
+              </section>
 
           <section class="section-small">
             <h3>投資信託とは？</h3>
             <p>NISAやiDeCoで利用できる金融商品の<strong>中心</strong>が投資信託です。</p>
             <p>投資家から集めたお金をひとつにまとめ、運用会社が<strong>株式や債券などに分散投資</strong>します。
-              <strong>少額からでもプロの運用</strong>を活用できるのが魅力です。
-              銀行や証券会社で購入できますが、金融機関によって<strong>取り扱い商品が異なる</strong>点に注意が必要です。</p>
-            <img src="images/Zu_1_2.png" alt="投資信託のイメージ図（資金→運用→複数資産）" class="img-center">
+              <strong>少額からでもプロの運用</strong>を活用できるのが魅力です。</p>
+            <p>銀行や証券会社で購入できますが、金融機関によって<strong>取り扱い商品や各種手数料が異なる</strong>点に注意が必要です。</p>
+              <img src="images/Zu_1_2.png" alt="投資信託のイメージ図（資金→運用→複数資産）" class="img-center">
           </section>
 
           <section class="section-small">
             <h3>NISA と iDeCo の比較</h3>
-            <table aria-label="NISAとiDeCoの比較">
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>NISA<br>（少額投資非課税制度）</th>
-                  <th>iDeCo<br>（個人型確定拠出年金）</th></tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td style="background: #eee;">目的</td>
-                  <td>幅広い資産形成<br>（生活資金や将来の大きな出費にも対応）</td>
-                  <td>老後資金の準備に特化</td></tr>
-                <tr>
-                  <td style="background: #eee;">利用できる年齢</td>
-                  <td>制限なし<br>（未成年も可能）</td>
-                  <td>20歳〜60歳未満<br>（65歳まで加入延長可）</td></tr>
-                <tr>
-                  <td style="background: #eee;">掛け金（投資額）上限</td>
-                  <td>つみたて投資枠：年間120万円<br><br>成長投資枠：年間240万円<br>（保有の上限は1800万円）</td>
-                  <td>職業や加入年金によって<br>月5000円〜最大68000円</td></tr>
-                <tr>
-                  <td style="background: #eee;">節税効果</td>
-                  <td>運用益が非課税</td>
-                  <td>運用益が非課税<br>掛け金が全額所得控除</td></tr>
-                <tr>
-                  <td style="background: #eee;">引き出し可能時期</td>
-                  <td>いつでも可能</td>
-                  <td>原則60歳まで引き出せない</td></tr>
-                <tr>
-                  <td style="background: #eee;">受け取り時の税金</td>
-                  <td>なし</td>
-                  <td>一時金や年金として受け取る際に課税される場合あり</td></tr>
-                <tr>
-                  <td style="background: #eee;">向いている人</td>
-                  <td>途中で使う可能性がある人<br>幅広く投資をしたい人</td>
-                  <td>老後資金を計画的に準備したい人<br>節税メリットを活かしたい人</td></tr>
-              </tbody>
-            </table>
-            <p style="font-size: 16px; margin-top: 15px;color: grey">
+            <div class="table-wrap">
+              <table aria-label="NISAとiDeCoの比較">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>NISA<br>（少額投資非課税制度）</th>
+                    <th>iDeCo<br>（個人型確定拠出年金）</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="background: #eee;">目的</td>
+                    <td>幅広い資産形成<br>（生活資金や将来の大きな出費にも対応）</td>
+                    <td>老後資金の準備に特化</td></tr>
+                  <tr>
+                    <td style="background: #eee;">利用できる年齢</td>
+                    <td>18歳以上<br>（国内居住者）</td>
+                    <td>20歳〜60歳未満<br>（65歳まで加入延長可）</td></tr>
+                  <tr>
+                    <td style="background: #eee;">掛け金（投資額）上限</td>
+                    <td>つみたて投資枠：年間120万円<br><br>成長投資枠：年間240万円<br>（保有の上限は1800万円）</td>
+                    <td>職業や加入年金によって<br>月5000円〜最大68000円</td></tr>
+                  <tr>
+                    <td style="background: #eee;">節税効果</td>
+                    <td>運用益が非課税</td>
+                    <td>運用益が非課税<br>掛け金が全額所得控除</td></tr>
+                  <tr>
+                    <td style="background: #eee;">引き出し可能時期</td>
+                    <td>いつでも可能</td>
+                    <td>原則60歳まで引き出せない</td></tr>
+                  <tr>
+                    <td style="background: #eee;">受け取り時の税金</td>
+                    <td>なし</td>
+                    <td>一時金や年金として受け取る際に課税される場合あり</td></tr>
+                  <tr>
+                    <td style="background: #eee;">向いている人</td>
+                    <td>途中で使う可能性がある人<br>幅広く投資をしたい人</td>
+                    <td>老後資金を計画的に準備したい人<br>節税メリットを活かしたい人</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size: 14px; margin-top: 15px;color: grey">
                   【注意】</p>
-            <p style="font-size: 16px; margin-left: 30px;color: grey">
-                  このページの内容は一般的な解説であり、特定の商品勧誘を目的とするものではありません。<br>
+            <p style="font-size: 14px; margin-left: 30px;color: grey">
+                  このページの内容は一般的な解説であり、特定の商品勧誘を目的とするものではありません。
                   各制度の詳細・最新情報は公的機関や金融機関の公式情報をご確認ください。</p>
           </section>
         </section>
@@ -333,8 +358,8 @@
 
           <section class="section-small">
             <h3>投資のリスクと貯蓄のリスク</h3>
-            <p>投資というと「値下がりして損をするのでは？」という不安が真っ先に浮かびます。
-              しかし実は、貯蓄にもリスクがあります。</p>
+            <p>投資というと「値下がりして損をするのでは？」という不安がついて回ります。
+              しかし実は、投資だけではなく、貯蓄にもリスクがあります。</p>
             <p>たとえばインフレが進むと、同じ1万円でも買えるものの量が減り、資産の実質的な価値は下がってしまいます。
               つまり、<strong>投資にもリスクはあるけれど、貯蓄だけに頼ることもリスクがある</strong>のです。</p>
             <img src="images/Zu_2_1.png" alt="株式チャート図" class="img-center">
@@ -343,9 +368,9 @@
           <section  class="section-small">
             <h3>インフレによる資産価値の減少</h3>
             <p>近年の物価や為替の変動は、私たちの生活を直撃しました。
-              日用品や食料品の値上がりを実感した方も多いはずです。
-              これはつまり、「お金を持っているだけでは、時間が経つほど価値が減ってしまう」ことを示しています。</p>
-            <p>だからこそ、<strong>資産を増やすだけでなく、守るためにも投資の活用が重要</strong>です。</p>
+               日用品や食料品の値上がりを実感した方も多いでしょう。</p>
+            <p>これはつまり、「現金のままでは、時間とともにお金の価値が目減りする」ことを示しています。
+               だからこそ、資産を増やすだけでなく、<strong>守る観点からも投資の活用が重要</strong>です。</p>
           </section>
 
           <section  class="section-small">
@@ -353,26 +378,30 @@
             <p>投資のリスクを抑えるために有効なのが「分散投資」です。</p>
             <p>株式だけでなく、債券や投資信託といった異なる資産に分けて投資することで、値動きの偏りを小さくできます。</p>
             <p>例えば、<strong>株式と債券は値動きが逆相関の関係にある</strong>といわれています。
-              株式市場が下がるときに債券が安定することがあり、
-              その組み合わせによって全体の資産を守る効果が期待できます。</p>
-            <p>さらに、投資信託では運用会社が市場の状況に応じて銘柄を入れ替えるため、
-              目指すパフォーマンスに近づける工夫がなされています。</p>
-            <p>こうした異なる特性を組み合わせることで、資産全体の安定感を高めることができます。
-              <strong>「1つのかごに卵を全部入れない」</strong>という考え方を実践しながら、
-              安心感を持って資産形成を続けていくことが望ましいのです。</p>
+               一方が下がるときにもう一方が安定しやすい関係にあり、
+               その組み合わせによって、全体の資産を守る効果が期待できます。</p>
+            <p>さらに、投資信託は、市場環境に応じて運用会社が銘柄を入れ替えて
+               目標とする運用成果を目指します。</p>
+            <p>こうした異なる特性を組み合わせることで、資産全体のブレを抑えられます。
+               <strong>「1つのかごに卵を全部入れない」</strong>を基本に、
+               ご自身のペースで納得できる手段を選んでいきましょう。</p>
             <img src="images/Zu_2_2.png" alt="分散投資" class="img-center">
           </section>
 
           <section class="section-small">
             <h3>自分に合ったリスク許容度を知る</h3>
-            <p>人によって「どのくらいのリスクを取れるか」は異なります。
-                年齢、家族構成、収入、健康状態など、生活環境によっても変わってきます。</p>
-            <p>たとえば、<strong>若い世代</strong>であれば将来までの時間が長く、
-                もし一時的に資産価値が下がったとしても、時間をかけて回復する可能性があります。
-                そのため、ある程度のリスクを取る余裕があります。</p>
-            <p>一方で、<strong>リタイアが近い世代</strong>では、元本を大きく減らさない工夫が求められます。
-                生活資金に直結するため、リスクを抑えた資産運用が中心となるでしょう。</p>
-            <p>自分が「どのくらいの値下がりなら受け入れられるか」を意識することが、安心して投資を続けるための第一歩です。</p>
+            <p>人によって「どのくらいのリスクを取れるか」は異なります。 
+               年齢、家族構成、収入、健康状態など、生活環境によっても変わり、
+               時間とともに見直しも必要です。</p>
+            <p>たとえば、<strong>若い世代</strong>は将来までの時間が長く、
+               一時的な値下がりからの回復を待ちやすいため、
+               リスクを取りやすい傾向があります。</p>
+            <p>一方、<strong>リタイアが近い世代</strong>では、生活資金に直結するため、
+               元本の変動を抑えた配分が中心になります。</p>
+            <p>まず、「1年で最大どれだけ下がったら方針を見直すか」という許容幅を
+               数字で決めておくと、判断がぶれにくくなります。</p>
+            <p>また、多くの金融機関がWebサイトで「リスク許容度診断」や資産配分の例を公開しています。
+               参考にとどめ、ご自身の家計・投資期間・目的に合わせて配分や方針を調整しましょう。</p>
           </section>
         </section>
 
@@ -381,52 +410,88 @@
 
           <section class="section-small">
             <h3>小さな目標を立てる</h3>
-            <p>「老後2,000万円」といった大きな目標を前にすると、始める前から気が重くなってしまいます。
-                大切なのは、まず<strong>小さな目標を設定</strong>することです。</p>
-            <p> たとえば「毎月3,000円積み立ててみる」「最初の1万円を運用してみる」
-                といった小さな行動でも、習慣化することで大きな成果につながります。</p>
-            <p> また、継続していく中で投資に対する関心を持ち続けることができ、
-                経済や社会の情報に自然と敏感になっていきます。
-                これがさらに学びや行動につながり、資産運用のチャンスを広げるきっかけになります。</p>
+            <p>「老後2,000万円」のような大きな目標は意欲になる一方、負担にもなります。
+                まずは<strong>続けられる小さな目標</strong>から始めましょう。</p>
+            <p> たとえば「毎月3,000円積み立ててみる」「最初の1万円を運用してみる」など。
+                無理のない範囲で金額を決め、まずは3か月続ける――と期間も区切ると継続しやすく、
+                習慣化につながります。</p>
+            <p> 続けるうちに経済や社会のニュースにも自然と関心が向き、
+                <strong>学び→行動→見直し</strong>の循環が回り始めます。</p>
             <img src="images/Zu_3_1.png" alt="積み重ね" class="img-center">
           </section>
 
           <section class="section-small">
             <h3>自分に合った金融機関を選ぶ</h3>
             <p>投資を始める第一歩は「どこに口座を持つか」を決めることです。
-               金融機関によって選べる商品やサポート体制が違い、投資のスタイルに大きく関わります。</p>
+               金融機関ごとに、取扱商品・手数料・サポート体制などが異なり、
+               投資スタイルを左右します。</p>
             <ul>
               <li><strong>銀行</strong>：安心感があり、窓口で相談できるが、取り扱い商品は限定的。</li>
-              <li><strong>証券会社（実店舗型）</strong>：担当者と相談しながら選べる安心感があるが、手数料はやや高め。勧誘が苦手な人は注意が必要。</li>
-              <li><strong>ネット証券</strong>：手数料が安く、豊富な商品を扱う一方、自分で調べて判断する必要がある。</li>
+              <li><strong>ネット銀行</strong>：店舗がなく手数料や金利優遇のキャンペーンが多め。
+                  ネット証券と連携すると、即時振替や自動入金が使いやすい。</li>
+              <li><strong>証券会社（実店舗型）</strong>：担当者と相談しながら選べる安心感があるが、
+                  手数料はやや高め。勧誘が苦手な人は注意が必要。</li>
+              <li><strong>ネット証券</strong>：手数料が安く、豊富な商品を扱う一方、
+                  自分で調べて判断する必要がある。</li>
             </ul>
-            <p>最初の選択が、その後の資産形成の安心感につながります。</p>
+            <p>まずは自分が重視するポイント（手数料、商品数、サポート）を決めて選びましょう。
+               最初の選択が、その後の資産形成の安心感につながります。</p>
           </section>
 
           <section class="section-small">
             <h3>今日の一歩が未来を変える</h3>
-            <p>金融機関を選んだら、次は以下の流れで実際に始めましょう。</p>
+            <p>金融機関を決めたら、次の3ステップで始めましょう。</p>
             <ol>
-              <li> 証券口座を開設する</li>
-              <li> 積立の金額や商品を設定する</li>
-              <li> 定期的に記録・確認して見直す</li>
+              <li> 口座を開設する</li>
+              <li> 積立の金額や商品を決め、可能なら自動積立を設定する</li>
+              <li> 月1回、残高と配分を記録して見直す</li>
             </ol>
             <p>資産形成は「思い立った日がスタートライン」です。</p>
             <p>「まだ早いかな」「もう遅いかな」と迷うより、
-              <strong>今日できる一歩</strong>を踏み出すことが未来の安心につながります。</p>
-            <p>続ける力が未来を変えていく、その第一歩を自分で決めてみましょう。</p>
+              <strong>今日できる小さな一歩</strong>を。</p>
+            <p>続ける仕組みが、結果として未来の安心につながります。</p>
             <img src="images/Zu_3_2.png" alt="育てる" class="img-center">
           </section>
         </section>
-
       </main>
 
       <footer>
         <p style="font-size:14px;margin-bottom: 6px">
-                © 2025 ファイナンシャルプランナー（AFP）　〇〇</p>
+                © 2025 ファイナンシャル・プランナー（AFP）　〇〇</p>
         <p style="font-size:14px">このサイトの情報は一般的な解説を目的としています。
                 投資判断はご自身の責任で行ってください。</p>
       </footer>
     </div>
+
+    <script>
+      (() => {
+        const DURATION = 800;
+        const OFFSET   = 0;
+
+        const easeInOutCubic = t => (
+          t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2 );
+
+        document.querySelectorAll('nav a[href^="#"]').forEach(a => {
+          a.addEventListener('click', e => {
+            const id = a.getAttribute('href').slice(1);
+            const el = document.getElementById(id);
+            if (!el) return;
+            e.preventDefault();
+
+            const start = window.pageYOffset;
+            const end = el.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+            const dist = end - start;
+            const t0 = performance.now();
+
+            const step = now => {
+              const p = Math.min((now - t0) / DURATION, 1);
+              const y = start + dist * easeInOutCubic(p);
+              window.scrollTo(0, y);
+              if (p < 1) requestAnimationFrame(step);
+              else history.replaceState(null, '', '#' + id); };
+            requestAnimationFrame(step); }); });
+      })();
+    </script>
+
   </body>
 </html>
