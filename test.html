@@ -4,17 +4,25 @@
     <meta charset="utf-8">
     <title>じぶん資産づくり はじめの一歩</title>
     <meta name="description" content="お金のこと、やさしく、いまから。">
-    <meta name="author" content="ファイナンシャル・プランナー（AFP）〇〇〇〇〇">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       *, *::before,*::after {margin: 0px; padding: 0px;box-sizing: border-box; }
          #wrap {max-width: 1000px; margin: 0px auto;padding:  0 12px;}
 
-      header {border: 3px solid #d8e9dd; }
+      header {border: 3px solid #d8e9dd; 
+              padding: 16px 12px; }
       main {border: 3px solid #d8e9dd; }
-      footer {border: 3px solid #d8e9dd; }
-      header {padding: 16px 12px; }
-      body {font-size: clamp(16px,2.2vw,18px); line-height: 1.7;}
+      footer {font-size: 13px; 
+              border: 3px solid #d8e9dd; 
+              border-top: none;
+              background-color: #F6F7F8;
+              text-align: center;
+              color: grey;
+              padding: 10px 0; }
+      body {font-size: clamp(16px,2.2vw,18px); line-height: 1.7;
+          font-family: system-ui, -apple-system, Segoe UI, Roboto, 
+          "Hiragino Kaku Gothic ProN","Hiragino Sans", 
+          "Yu Gothic Medium", "YuGothic", Meiryo, sans-serif;}
 
       header h1 {
         line-height: 1.25;
@@ -55,9 +63,8 @@
         flex: 1;
         text-align: center; }
 
-      nav ul li:nth-of-type(2) {
-        border-left: 3px solid #d8e9dd;
-        border-right: 3px solid #d8e9dd; }
+      nav ul li + li { 
+        border-left: 3px solid #d8e9dd; }
 
       nav ul li a {
         display: block;
@@ -75,7 +82,7 @@
           line-height: 42px;
           padding: 6px 2px;
           white-space: nowrap;}}  
-                
+
       @media (max-width: 360px) {
         nav ul li a {
           font-size: clamp(11px, 3.7vw, 14px);
@@ -121,17 +128,18 @@
         margin-bottom: 15px;
         margin-left: 10px; }
 
+      .mini-head{
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 1.1em 0 .5em;
+        color:#2C3E50;}
+      .mini-head + ol,
+      .mini-head + ul { margin-top: .4em; }
+        
       .section-small {
         background-color:   #F1FAF5;
         margin: 10px;
         padding: 20px; }
-
-      footer {
-        border-top: none;
-        background-color: #F6F7F8;
-        text-align: center;
-        color: grey;
-        padding: 10px 0; }
 
       table { 
         border-collapse: collapse; 
@@ -181,7 +189,6 @@
         main li + li {
           margin-top: .2em;}
 
-
     </style>
   </head>
 
@@ -197,6 +204,7 @@
       <nav aria-label="サイト内ナビゲーション">
         <ul>
           <li><a href="#Step1">始める前に</a></li>
+          <li><a href="#Basics">制度と商品</a></li>
           <li><a href="#Risk">リスクを知ろう</a></li>
           <li><a href="#FirstStep">はじめの一歩</a></li>
         </ul>
@@ -218,8 +226,7 @@
             <h3>資産形成の基本姿勢</h3>
             <p>まず、出発点は総資産のバランスです。
                生活費の数か月〜1年分にあたる緊急資金を確保したうえで、
-               長期で育てたい資金は投資へ振り向けるなど、
-               目的と時期に応じて配分を設計しましょう。</p>
+               長期で育てたい資金は投資へ振り向けるなど、目的と時期に応じて配分を設計しましょう。</p>
             <p>投資には短期・中期・長期があり、
                それぞれに向いた商品があります。
                年齢や家族構成、健康状態、仕事の変化に合わせて、
@@ -251,17 +258,65 @@
               </tbody>
             </table>
           </section>
+          
+          <section class="section-small">
+            <h3 id="term-tips">用語との距離を縮める</h3>
+            <p>
+              金融の説明は専門用語が多く、最初のハードルになりがちです。
+              わからないまま進めると、意図しない負担につながることがあります。
+              自分の言葉に置き換えられない用語は<strong>「保留→調べる／尋ねる→理解してから判断」</strong>を基本ルールにしましょう。
+            </p>
+            <ul>
+              <li>わからないまま契約しない<br>
+                  （対面の場合も「分かりやすい言葉に言い換えてください」と頼んでOK）。</li>
+              <li>初めて聞いた用語はメモし、金融機関や公的機関の公式Webサイト（用語集）で意味を確認。</li>
+              <li>個別商品の条件（費用・リスクなど）は交付目論見書・約款で必ず確認。</li>
+              </ul>
+          </section>
+
+          <section  class="section-small">
+            <h3>電子書類の読み方</h3>
+            <p>近頃は多くの商品資料が電子書類で提供されていますが、
+                電子データの長文は、頭に入りにくいものです。
+                しかし、<strong>「理解してから判断」</strong>は自分のお金を守る基本です。
+                まずは、ここだけ押さえましょう。</p>
+            <h4 class="mini-head">【最初の3ステップ】</h4>
+            <ol>
+              <li>検索で要点を拾う：<br>
+                  例：信託報酬／手数料／途中換金／為替リスク</li>
+              <li>不明点に印をつける：<br>
+                  ファイル名末尾に【要確認】と付け、後日カスタマーや担当に質問</li>
+              <li>要点を1行メモ化：<br>
+                  ページ番号つきで費用・リスク・換金条件などを自分の言葉で短く記録</li>
+            </ol>
+            <h4 class="mini-head">【最低限のチェック】</h4>
+            <ul>
+              <li>費用：<br>
+                  購入時・保有中・売却時の合計感</li>
+              <li>リスク：<br>
+                  価格変動・為替・信用など、主なリスク</li>
+              <li>換金・受け取り：<br>
+                  いつ・どうやって・制限（例：iDeCoは原則60歳まで引き出し不可）</li>
+              <li>運用方針：<br>
+                「市場全体の動きに合わせて増減するタイプ」か、「市場平均より高い成果を狙うタイプ」か</li>
+            </ul>
+            <p>交付書類（交付目論見書・約款等）で<strong>費用・制約・リスクを含む全事項</strong>を必ず確認しましょう。
+                わからないまま申し込むことは避け、<strong>不明点はその場で質問</strong>して、
+                納得してから進めてください。</p>
+          </section>
+        </section>
+
+        <section id="Basics" >
+          <h2>制度と商品 <small class="subtitle"> — 仕組みを知れば、ムリなく選べる。</small></h2>
 
           <section  class="section-small">
             <h3>小額投資のメリット</h3>
               <p>資産形成というと「まとまったお金が必要」と思いがちですが、毎月1,000円や5,000円からでも始められます。</p>
               <p>小額で始めることで家計に負担をかけずに習慣化でき、時間をかけて少しずつ積み立てることで
                 <strong>複利効果</strong>により資産が育っていきます。</p>
-            <img src="images/Zu_1_1.png" alt="少額からコツコツ積み立てのイメージ（樹の成長）" class="img-center">
-          </section>
-
-          <section class="section-small">
-            <h3>NISA・iDeCo の制度概要</h3>
+            <img src="images/Zu_1_1.png" 
+                 alt="少額からコツコツ積み立てのイメージ（樹の成長）" 
+                 class="img-center" loading="lazy" width="400" height="316">
             <p>投資を後押ししてくれる制度として、<strong>NISA（少額投資非課税制度）</strong> と 
               <strong>iDeCo（個人型確定拠出年金）</strong> があります。</p>
             <p>どちらも<strong>運用益の非課税</strong>や<strong>節税の仕組み</strong>があり、
@@ -304,9 +359,15 @@
             <h3>投資信託とは？</h3>
             <p>NISAやiDeCoで利用できる金融商品の<strong>中心</strong>が投資信託です。</p>
             <p>投資家から集めたお金をひとつにまとめ、運用会社が<strong>株式や債券などに分散投資</strong>します。
-              <strong>少額からでもプロの運用</strong>を活用できるのが魅力です。</p>
+               <strong>少額からでもプロの運用</strong>を活用できるのが魅力です。</p>
+            <p>また、投資信託は市場環境に応じて、運用会社が組み入れ内容を見直すなど、
+               目標とする運用成果を目指して調整します。商品ごとに方針やコストが異なるため、
+               特徴を確認して選びましょう。</p>
             <p>銀行や証券会社で購入できますが、金融機関によって<strong>取り扱い商品や各種手数料が異なる</strong>点に注意が必要です。</p>
-              <img src="images/Zu_1_2.png" alt="投資信託のイメージ図（資金→運用→複数資産）" class="img-center">
+
+              <img src="images/Zu_1_2.png" 
+                   alt="投資信託のイメージ図（資金→運用→複数資産）" 
+                   class="img-center" loading="lazy" width="600" height="284">
           </section>
 
           <section class="section-small">
@@ -368,7 +429,9 @@
               しかし実は、投資だけではなく、貯蓄にもリスクがあります。</p>
             <p>たとえばインフレが進むと、同じ1万円でも買えるものの量が減り、資産の実質的な価値は下がってしまいます。
               つまり、<strong>投資にもリスクはあるけれど、貯蓄だけに頼ることもリスクがある</strong>のです。</p>
-            <img src="images/Zu_2_1.png" alt="株式チャート図" class="img-center">
+            <img src="images/Zu_2_1.png" 
+                 alt="株式チャート図" 
+                 class="img-center" loading="lazy" width="350" height="340">
           </section>
 
           <section  class="section-small">
@@ -386,12 +449,12 @@
             <p>例えば、<strong>株式と債券は値動きが逆相関の関係にある</strong>といわれています。
                一方が下がるときにもう一方が安定しやすい関係にあり、
                その組み合わせによって、全体の資産を守る効果が期待できます。</p>
-            <p>さらに、投資信託は、市場環境に応じて運用会社が銘柄を入れ替えて
-               目標とする運用成果を目指します。</p>
             <p>こうした異なる特性を組み合わせることで、資産全体のブレを抑えられます。
                <strong>「1つのかごに卵を全部入れない」</strong>を基本に、
                ご自身のペースで納得できる手段を選んでいきましょう。</p>
-            <img src="images/Zu_2_2.png" alt="分散投資" class="img-center">
+            <img src="images/Zu_2_2.png" 
+                 alt="分散投資" 
+                 class="img-center" loading="lazy" width="300" height="216">
           </section>
 
           <section class="section-small">
@@ -418,12 +481,14 @@
             <h3>小さな目標を立てる</h3>
             <p>「老後2,000万円」のような大きな目標は意欲になる一方、負担にもなります。
                 まずは<strong>続けられる小さな目標</strong>から始めましょう。</p>
-            <p> たとえば「毎月3,000円積み立ててみる」「最初の1万円を運用してみる」など。
+            <p> たとえば「毎月3,000円積み立ててみる」 「最初の1万円を運用してみる」など。
                 無理のない範囲で金額を決め、まずは3か月続ける――と期間も区切ると継続しやすく、
                 習慣化につながります。</p>
             <p> 続けるうちに経済や社会のニュースにも自然と関心が向き、
                 <strong>学び→行動→見直し</strong>の循環が回り始めます。</p>
-            <img src="images/Zu_3_1.png" alt="積み重ね" class="img-center">
+            <img src="images/Zu_3_1.png" 
+                 alt="積み重ね" 
+                 class="img-center" loading="lazy" width="300" height="225">
           </section>
 
           <section class="section-small">
@@ -448,24 +513,27 @@
             <h3>今日の一歩が未来を変える</h3>
             <p>金融機関を決めたら、次の3ステップで始めましょう。</p>
             <ol>
-              <li> 口座を開設する</li>
-              <li> 積立の金額や商品を決め、可能なら自動積立を設定する</li>
-              <li> 月1回、残高と配分を記録して見直す</li>
+              <li> 口座を開設する。</li>
+              <li> 積立の金額や商品を決め、可能なら自動積立を設定する。</li>
+              <li> 月1回、残高と配分を記録して見直す。</li>
             </ol>
             <p>資産形成は「思い立った日がスタートライン」です。</p>
-            <p>「まだ早いかな」「もう遅いかな」と迷うより、
+            <p>「まだ早いかな」 「もう遅いかな」と迷うより、
               <strong>今日できる小さな一歩</strong>を。</p>
             <p>続ける仕組みが、結果として未来の安心につながります。</p>
-            <img src="images/Zu_3_2.png" alt="育てる" class="img-center">
+            <img src="images/Zu_3_2.png" 
+                 alt="育てる" 
+                 class="img-center" loading="lazy" width="500" height="375">
           </section>
         </section>
       </main>
 
       <footer>
-        <p style="font-size:14px;margin-bottom: 6px">
-                © 2025 ファイナンシャル・プランナー（AFP）　〇〇</p>
-        <p style="font-size:14px">このサイトの情報は一般的な解説を目的としています。
-                投資判断はご自身の責任で行ってください。</p>
+        <p style="margin-bottom: 4px;">
+           © 2025 じぶん資産づくり　|　最終更新：<time datetime="2025-08">2025年8月</time></p>
+        <p>無断転載を禁じます。</p>
+        <p>このサイトの情報は一般的な解説を目的としています。
+           投資判断はご自身の責任で行ってください。</p>
       </footer>
     </div>
 
