@@ -45,10 +45,8 @@
         text-shadow: 1px 1px 1px whitesmoke;
         max-width: 90%;
         overflow-wrap: anywhere; }
-
       @media (max-width: 800px) {
         header { padding: 12px 12px; }}
-
       .sm-only{ display: none; }
       @media (max-width: 480px){
         .sm-only{ display: inline; }}
@@ -77,14 +75,12 @@
         font-size: 20px;
         font-weight: bold;
         position: relative; }
-
       @media (max-width: 480px) {
         nav ul li a {
           font-size: clamp(12px, 3.5vw, 16px);
           line-height: 42px;
           padding: 6px 2px;
           white-space: nowrap;}}  
-
       @media (max-width: 360px) {
         nav ul li a {
           font-size: clamp(11px, 3.7vw, 14px);
@@ -177,6 +173,14 @@
         max-width: 100%;
         height: auto;
         margin: 12px auto; }
+
+      .img-compact1 { max-width: 80%; }
+      @media (max-width: 480px) { 
+        .img-compact { max-width: 100%; } }
+
+      .img-compact2 { max-width: 40%; }
+      @media (max-width: 480px) { 
+        .img-compact { max-width: 80%; } }
 
       main ul {
         margin: 14px 0 18px;
@@ -320,7 +324,8 @@
                 <strong>複利効果</strong>により資産が育っていきます。</p>
             <img src="images/Zu_1_1.png" 
                  alt="少額からコツコツ積み立てのイメージ（樹の成長）" 
-                 class="img-center" loading="lazy" width="1000" height="770">
+                 class="img-center img-compact1" loading="lazy"
+                 width="1000" height="770">
             <p>投資を後押ししてくれる制度として、<strong>NISA（少額投資非課税制度）</strong> と 
               <strong>iDeCo（個人型確定拠出年金）</strong> があります。</p>
             <p>どちらも<strong>運用益の非課税</strong>や<strong>節税の仕組み</strong>があり、
@@ -367,11 +372,12 @@
             <p>また、投資信託は市場環境に応じて、運用会社が組み入れ内容を見直すなど、
                目標とする運用成果を目指して調整します。商品ごとに方針やコストが異なるため、
                特徴を確認して選びましょう。</p>
-            <p>銀行や証券会社で購入できますが、金融機関によって<strong>取り扱い商品や各種手数料が異なる</strong>点に注意が必要です。</p>
-
-              <img src="images/Zu_1_2.png" 
-                   alt="投資信託のイメージ図（資金→運用→複数資産）" 
-                   class="img-center" loading="lazy" width="1000" height="484">
+            <p>銀行や証券会社で購入できますが、金融機関によって
+              <strong>取り扱い商品や各種手数料が異なる</strong>点に注意が必要です。</p>
+            <img src="images/Zu_1_2.png" 
+                 alt="投資信託のイメージ図（資金→運用→複数資産）" 
+                 class="img-center img-compact1" loading="lazy" 
+                 width="1000" height="484">
           </section>
 
           <section class="section-small">
@@ -435,7 +441,8 @@
               つまり、<strong>投資にもリスクはあるけれど、貯蓄だけに頼ることもリスクがある</strong>のです。</p>
             <img src="images/Zu_2_1.png" 
                  alt="株式チャート図" 
-                 class="img-center" loading="lazy" width="1000" height="619">
+                 class="img-center img-compact1" loading="lazy"
+                 width="1000" height="619">
           </section>
 
           <section  class="section-small">
@@ -458,7 +465,7 @@
                ご自身のペースで納得できる手段を選んでいきましょう。</p>
             <img src="images/Zu_2_2.png" 
                  alt="分散投資" 
-                 class="img-center" loading="lazy" width="1000" height="721">
+                 class="img-center img-compact2" loading="lazy" width="1000" height="721">
           </section>
 
           <section class="section-small">
@@ -492,7 +499,7 @@
                 <strong>学び→行動→見直し</strong>の循環が回り始めます。</p>
             <img src="images/Zu_3_1.png" 
                  alt="積み重ね" 
-                 class="img-center" loading="lazy" width="1000" height="750">
+                 class="img-center img-compact2" loading="lazy" width="1000" height="750">
           </section>
 
           <section class="section-small">
