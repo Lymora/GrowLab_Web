@@ -141,15 +141,14 @@
         border: 1px solid #bbb; 
         padding: 8px;
         text-align: center;
-        vertical-align: top; }
+        vertical-align: middle;
+        background: #eee; }
 
       td { 
         border: 1px solid #bbb; 
         padding: 8px; 
         text-align: center; 
         vertical-align: top; }
-
-      thead { background: #eee; }
 
       tbody { background: white; }
 
@@ -160,12 +159,12 @@
       .table-wrap table{
         min-width: 640px; }
 
-      img { max-width:100%; height:auto; }
+      img { 
+        max-width:100%; 
+        height:auto; }
 
       .img-center {
         display: block;
-        max-width: 100%;
-        height: auto;
         margin: 12px auto; }
 
       .img-compact1 { max-width: 80%; }
@@ -245,19 +244,19 @@
               </thead>
               <tbody>
                 <tr>
-                  <td scope="row" style="background: #eee;">目的</td>
+                  <th scope="row" >目的</th>
                   <td>日々のお金</td>
                   <td>5年以内に使う予定</td>
                   <td>10年以上使わない</td>
                 </tr>
                 <tr>
-                  <td scope="row" style="background: #eee;">大事なポイント</td>
+                  <th scope="row" >大事なポイント</th>
                   <td>すぐに使える</td>
                   <td>確実に準備できる</td>
                   <td>増やせる</td>
                 </tr>
                 <tr>
-                  <td scope="row" style="background: #eee;">貯め方</td>
+                  <th scope="row" >貯め方</th>
                   <td>現金・普通預金</td>
                   <td>定期預金</td>
                   <td>投資</td>
@@ -318,13 +317,13 @@
 
           <section  class="section-small">
             <h3>小額投資のメリット</h3>
-              <p>資産形成というと「まとまったお金が必要」と思いがちですが、毎月1,000円や5,000円からでも始められます。</p>
-              <p>小額で始めることで家計に負担をかけずに習慣化でき、時間をかけて少しずつ積み立てることで
-                <strong>複利効果</strong>により資産が育っていきます。</p>
-            <img src="images/Zu_1_1.png" 
-                 alt="少額からコツコツ積み立てのイメージ（樹の成長）" 
+            <p>資産形成というと「まとまったお金が必要」と思いがちですが、毎月1,000円や5,000円からでも始められます。</p>
+            <p>小額で始めることで家計に負担をかけずに習慣化でき、時間をかけて少しずつ積み立てることで
+              <strong>複利効果</strong>により資産が育っていきます。</p>
+              <img src="images/Zu_1_1.png" 
                  class="img-center img-compact1" loading="lazy"
                  width="739" height="540">
+            </figure>              
             <p>投資を後押ししてくれる制度として、<strong>NISA（少額投資非課税制度）</strong> と 
               <strong>iDeCo（個人型確定拠出年金）</strong> があります。</p>
             <p>どちらも<strong>運用益の非課税</strong>や<strong>節税の仕組み</strong>があり、
@@ -385,44 +384,44 @@
               <table aria-label="NISAとiDeCoの比較">
                 <thead>
                   <tr>
-                    <th></th>
+                    <th scope="col" aria-hidden="true"></th>
                     <th scope="col">NISA<br>（少額投資非課税制度）</th>
                     <th scope="col">iDeCo<br>（個人型確定拠出年金）</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td scope="row" style="background: #eee;">目的</td>
+                    <th scope="row">目的</th>
                     <td>幅広い資産形成<br>（生活資金や将来の大きな出費にも対応）</td>
                     <td>老後資金の準備に特化</td>
                   </tr>
                   <tr>
-                    <td scope="row" style="background: #eee;">利用できる年齢</td>
+                    <th scope="row">利用できる年齢</th>
                     <td>18歳以上<br>（国内居住者）</td>
                     <td>20歳〜60歳未満<br>（65歳まで加入延長可）</td>
                   </tr>
                   <tr>
-                    <td scope="row" style="background: #eee;">掛け金（投資額）上限</td>
+                    <th scope="row">掛け金（投資額）上限</th>
                     <td>つみたて投資枠：年間120万円<br><br>成長投資枠：年間240万円<br>（保有の上限は1800万円）</td>
                     <td>職業や加入年金によって<br>月5000円〜最大68000円</td>
                   </tr>
                   <tr>
-                    <td scope="row" style="background: #eee;">節税効果</td>
+                    <th scope="row">節税効果</th>
                     <td>運用益が非課税</td>
                     <td>運用益が非課税<br>掛け金が全額所得控除</td>
                   </tr>
                   <tr>
-                    <td scope="row" style="background: #eee;">引き出し可能時期</td>
+                    <th scope="row" >引き出し可能時期</th>
                     <td>いつでも可能</td>
                     <td>原則60歳まで引き出せない</td>
                   </tr>
                   <tr>
-                    <td scope="row" style="background: #eee;">受け取り時の税金</td>
+                    <th scope="row">受け取り時の税金</th>
                     <td>なし</td>
                     <td>一時金や年金として受け取る際に課税される場合あり</td>
                   </tr>
                   <tr>
-                    <td scope="row" style="background: #eee;">向いている人</td>
+                    <th scope="row">向いている人</th>
                     <td>途中で使う可能性がある人<br>幅広く投資をしたい人</td>
                     <td>老後資金を計画的に準備したい人<br>節税メリットを活かしたい人</td>
                   </tr>
@@ -447,7 +446,7 @@
             <p>たとえばインフレが進むと、同じ1万円でも買えるものの量が減り、資産の実質的な価値は下がってしまいます。
               つまり、<strong>投資にもリスクはあるけれど、貯蓄だけに頼ることもリスクがある</strong>のです。</p>
             <img src="images/Zu_2_1.png" 
-                 alt="株式チャート図" 
+                 alt="運用商品のリスクとリターンの位置づけ" 
                  class="img-center img-compact1" loading="lazy"
                  width="872" height="540">
           </section>
@@ -471,7 +470,8 @@
                <strong>「1つのかごに卵を全部入れない」</strong>を基本に、
                ご自身のペースで納得できる手段を選んでいきましょう。</p>
             <img src="images/Zu_2_2.png" 
-                 alt="分散投資" 
+                 alt="" 
+                 aria-hidden="true"
                  class="img-center img-compact2" loading="lazy" 
                  width="950" height="433">
           </section>
@@ -506,9 +506,10 @@
             <p> 続けるうちに経済や社会のニュースにも自然と関心が向き、
                 <strong>学び→行動→見直し</strong>の循環が回り始めます。</p>
             <img src="images/Zu_3_1.png" 
-                 alt="積み重ね" 
-                 class="img-center img-compact2" loading="lazy" 
-                 width="720" height="540">
+                alt="" 
+                aria-hidden="true"
+                class="img-center img-compact2" loading="lazy" 
+                width="720" height="540">
           </section>
 
           <section class="section-small">
@@ -538,9 +539,10 @@
               <li> 月1回、残高と配分を記録して見直す。</li>
             </ol>
             <img src="images/Zu_3_2.png" 
-                 alt="育てる" 
-                 class="img-center img-compact1" loading="lazy" 
-                 width="720" height="540">
+                alt="" 
+                aria-hidden="true"
+                class="img-center img-compact1" loading="lazy" 
+                width="720" height="540">
             <p>資産形成は「思い立った日がスタートライン」です。
               「まだ早いかな」 「もう遅いかな」と迷うより、
                <strong>今日できる小さな一歩</strong>を。
@@ -591,4 +593,3 @@
 
   </body>
 </html>
-
